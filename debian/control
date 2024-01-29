@@ -1,0 +1,14 @@
+Source: pd-gendyflext
+Section: unknown
+Priority: optional
+Maintainer: Blokas <hello@blokas.io>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.5.1
+Homepage: http://ssfrr.com/projects/gendy/
+Rules-Requires-Root: no
+
+Package: pd-gendyflext
+Architecture: any
+Multi-Arch: foreign
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: gendyflext Pure Data extension

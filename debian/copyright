@@ -1,0 +1,94 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: pd-gendyflext
+Upstream-Contact: <preferred name and address to reach the upstream project>
+Source: <url://example.com>
+#
+# Please double check copyright with the licensecheck(1) command.
+
+Files:     src/breakpoint.cpp
+           src/breakpoint.h
+           src/gendy_waveform.cpp
+           src/gendy_waveform.h
+           src/log.cpp
+           src/log.h
+           src/splines.cpp
+           src/splines.h
+           src/types.h
+           src/util.cpp
+           src/util.h
+Copyright: 2009-2010 Spencer Russell Released under the GPLv3
+License:   GPL-3.0
+ This file is part of libgendy.
+ .
+ libgendy is free software: you can redistribute it and/or
+ modify it under the terms of the GNU General Public License version 3 as
+ published by the Free Software Foundation.
+ .
+ libgendy is distributed in the hope that it will be useful, but
+ WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+ or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for
+ more details.
+ .
+ You should have received a copy of the GNU General Public License along with
+ libgendy.  If not, see <http://www.gnu.org/licenses/>.
+ .
+ On Debian systems, the complete text of the GNU General Public License
+ Version 3 can be found in `/usr/share/common-licenses/GPL-3'.
+
+Files:     .gitignore
+           Makefile
+           gendy-ex1.pd
+           gendy-gui.pd
+           gendy~-help.pd
+           gendy~.pd_linux
+           package.txt
+Copyright: __NO_COPYRIGHT_NOR_LICENSE__
+License:   __NO_COPYRIGHT_NOR_LICENSE__
+
+Files:     src/gendy~.cpp
+           src/gendy~.h
+Copyright: 2009-2010 Spencer Russell Released under the GPLv3
+License:   GPL-3.0
+ This file is part of libgendy.
+ .
+ libgendy is free software: you can redistribute it and/or
+ modify it under the terms of the GNU General Public License version 3 as
+ published by the Free Software Foundation.
+ .
+ libgendy is distributed in the hope that it will be useful, but
+ WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+ or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for
+ more details.
+ .
+ You should have received a copy of the GNU General Public License along with
+ libgendy.  If not, see <http://www.gnu.org/licenses/>.
+ .
+ gendy~ - an implementation of Iannis Xenakis' Dynamic
+ Stochastic Synthesis as an object for Pure Data.
+ .
+ This project uses Thomas Grill's Flext framework, which
+ is necessary to compile and run it.
+ .
+ On Debian systems, the complete text of the GNU General Public License
+ Version 3 can be found in `/usr/share/common-licenses/GPL-3'.
+
+Files:     README
+Copyright: __NO_COPYRIGHT__ in: README
+License:   __UNKNOWN__
+ Gendy is an external for Pure Data and Max/MSP based on Iannis Xenakis'
+ Dynamic Stochastic Synthesis.
+ .
+ The library implementing DSS is decoupled from the Pure Data and Max/MSP
+ external code, so it should be relatively easily embeddable in other projects.
+ .
+ For an excellent explanation of DSS, see Sergio Luque's master's thesis:
+ http://www.sergioluque.com/thesis.html
+ .
+ One of the departures from cannonical DSS is the introduction of "target waveforms"
+ that the breakpoints gravitate towards. Currently only sinusoidal and square waves
+ are implemented, but implementing new waveforms is trivial, I just haven't done it
+ yet.
+
+#----------------------------------------------------------------------------
+# Files marked as NO_LICENSE_TEXT_FOUND may be covered by the following
+# license/copyright files.
