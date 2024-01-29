@@ -54,6 +54,8 @@ double gauss() {
 	return y * sqrt (-2.0 * log(r2) / r2);
 }
 
+#if 0
 int round(float num) {
 	return int(floor(num + 0.5));
 }
+#endif

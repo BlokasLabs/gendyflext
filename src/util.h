@@ -39,7 +39,9 @@ double randf();
 // From the GNU Scientific Library, src/randist/gauss.c, released under GPL
 double gauss();
 
+#if 0 // gt: Declaration conflicts with std::round, this function seems unused, but could be replaced with lroundf.
 // returns nearest integer. X.5 always rounded to X+1, so it's non-symmetrical
 int round(float num);
+#endif
 
 #endif /* UTIL_H */
